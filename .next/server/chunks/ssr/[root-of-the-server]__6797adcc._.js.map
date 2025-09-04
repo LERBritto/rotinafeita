@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Luis/Documents/GitHub/rotinafeita/src/app/auth/signin/page.tsx"],"sourcesContent":["export default function signin() {\r\n    return (\r\n        <div className=\"text-[#ffffff]\">\r\n            testesignin\r\n        </div>\r\n    )\r\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;QAAI,WAAU;kBAAiB;;;;;;AAIxC","debugId":null}}]
+}
