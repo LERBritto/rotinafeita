@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/luis/%C3%81rea%20de%20trabalho/Projects/rotinafeita/src/components/Clock.tsx"],"sourcesContent":["export default function Clock() {\n    return (\n        <div className=\"text-center\">\n            clock\n        </div>\n    )\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;QAAI,WAAU;kBAAc;;;;;;AAIrC","debugId":null}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["file:///home/luis/%C3%81rea%20de%20trabalho/Projects/rotinafeita/src/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\nimport Link from \"next/link\";\nimport Clock from \"../components/Clock\";\n\nexport default function Home() {\n  return (\n    <div className=\"bg-[#171717] text-white\">\n      <nav className=\"justify-between bg-[#202020] shadow-md\">\n        <div className=\"justify-end flex gap-4 mr-5\">\n          <Link href=\"/auth/signin\" className=\"hover:text-gray-400\">signin</Link>\n          <Link href=\"/auth/signout\" className=\"hover:text-gray-400\">signout</Link>\n        </div>\n      </nav>      \n      <Clock />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AACA;AACA;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAI,WAAU;0BACb,cAAA,8OAAC;oBAAI,WAAU;;sCACb,8OAAC,uKAAI;4BAAC,MAAK;4BAAe,WAAU;sCAAsB;;;;;;sCAC1D,8OAAC,uKAAI;4BAAC,MAAK;4BAAgB,WAAU;sCAAsB;;;;;;;;;;;;;;;;;0BAG/D,8OAAC,sIAAK;;;;;;;;;;;AAGZ","debugId":null}}]
+}
