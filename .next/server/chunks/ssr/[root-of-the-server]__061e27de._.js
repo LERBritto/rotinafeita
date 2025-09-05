@@ -37,7 +37,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Timer({ duration = 10 }) {
     const [timeLeft, setTimeLeft] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(duration);
-    const [progress, setProgress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1); // 1 = cheio, 0 = vazio
+    const [progress, setProgress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const start = Date.now();
         const end = start + duration * 1000;
@@ -48,43 +48,48 @@ function Timer({ duration = 10 }) {
             const fraction = Math.max(0, (end - now) / (duration * 1000));
             setProgress(fraction);
             if (remaining < 0) clearInterval(interval);
-        }, 100); // atualiza a cada 100ms
+        }, 100);
         return ()=>clearInterval(interval);
     }, [
         duration
     ]);
-    // Círculo
-    const radius = 90;
+    const radius = 290;
+    const radiusMinute = 260;
+    const radiusHour = 235;
     const circumference = 2 * Math.PI * radius;
+    const circumferenceMinutes = 2 * Math.PI * radiusMinute;
+    const circumferenceHour = 2 * Math.PI * radiusHour;
     const strokeDashoffset = circumference * (1 - progress);
+    const strokeDashoffsetMinutes = circumferenceMinutes * (1 - progress);
+    const strokeDashoffsetHour = circumferenceHour * (1 - progress);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex justify-center items-center min-h-screen bg-black text-white",
+        className: "flex justify-end items-center min-h-screen bg-black text-white",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative flex flex-col items-center p-8 rounded-xl bg-[#111] shadow-xl",
+            className: "relative flex flex-col items-center p-8 mr-20 mb-5 rounded-[50%] bg-[#111] shadow-xl",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative flex items-center justify-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        className: "w-56 h-56 -rotate-90",
+                        className: "w-150 h-150 -rotate-90",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "112",
-                                cy: "112",
-                                r: radius,
+                                cx: "300",
+                                cy: "300",
+                                r: radiusHour,
                                 stroke: "#333",
-                                strokeWidth: "8",
+                                strokeWidth: "10",
                                 fill: "transparent"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Clock.tsx",
-                                lineNumber: 36,
+                                lineNumber: 43,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "112",
-                                cy: "112",
-                                r: radius,
-                                stroke: "#00e0ff",
-                                strokeWidth: "8",
+                                cx: "300",
+                                cy: "300",
+                                r: radiusHour,
+                                stroke: "#ffffff",
+                                strokeWidth: "10",
                                 fill: "transparent",
                                 strokeDasharray: circumference,
                                 strokeDashoffset: strokeDashoffset,
@@ -92,40 +97,96 @@ function Timer({ duration = 10 }) {
                                 className: "transition-all duration-100 linear"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Clock.tsx",
-                                lineNumber: 44,
+                                lineNumber: 51,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                cx: "300",
+                                cy: "300",
+                                r: radiusMinute,
+                                stroke: "#333",
+                                strokeWidth: "15",
+                                fill: "transparent"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Clock.tsx",
+                                lineNumber: 63,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                cx: "300",
+                                cy: "300",
+                                r: radiusMinute,
+                                stroke: "#ffffff",
+                                strokeWidth: "15",
+                                fill: "transparent",
+                                strokeDasharray: circumference,
+                                strokeDashoffset: strokeDashoffset,
+                                strokeLinecap: "round",
+                                className: "transition-all duration-100 linear"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Clock.tsx",
+                                lineNumber: 71,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                cx: "300",
+                                cy: "300",
+                                r: radius,
+                                stroke: "#333",
+                                strokeWidth: "20",
+                                fill: "transparent"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Clock.tsx",
+                                lineNumber: 83,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                                cx: "300",
+                                cy: "300",
+                                r: radius,
+                                stroke: "#ffffff",
+                                strokeWidth: "20",
+                                fill: "transparent",
+                                strokeDasharray: circumference,
+                                strokeDashoffset: strokeDashoffset,
+                                strokeLinecap: "round",
+                                className: "transition-all duration-100 linear"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Clock.tsx",
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Clock.tsx",
-                        lineNumber: 35,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "absolute text-4xl font-bold",
+                        className: "absolute text-[150px] font-bold",
                         children: [
                             timeLeft,
                             "s"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Clock.tsx",
-                        lineNumber: 57,
+                        lineNumber: 104,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Clock.tsx",
-                lineNumber: 34,
+                lineNumber: 41,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Clock.tsx",
-            lineNumber: 33,
+            lineNumber: 40,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Clock.tsx",
-        lineNumber: 32,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
