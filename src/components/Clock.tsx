@@ -36,7 +36,7 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
   const strokeDashoffsetHour = circumferenceHour * (1 - progress);
   
   return (
-    <div className="flex justify-end items-center min-h-screen bg-black text-white">
+    <div className="flex justify-end items-center min-h-screen bg-[#171717] text-white">
       <div className="relative flex flex-col items-center p-8 mr-20 mb-5 rounded-[50%] bg-[#111] shadow-xl">
         <div className="relative flex items-center justify-center">
           <svg className="w-150 h-150 -rotate-90">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Clock from "../components/Clock";
+import Routine from "../components/Routine";
 
 export default function Home() {
   return (
@@ -10,8 +11,11 @@ export default function Home() {
           <Link href="/auth/signin" className="hover:text-gray-400">signin</Link>
           <Link href="/auth/signout" className="hover:text-gray-400">signout</Link>
         </div>
-      </nav>      
-      <Clock />
+      </nav>   
+      <div className="grid grid-cols-2 gap-4">
+        <Routine />
+        <Clock />
+      </div>
     </div>
   );
 }
