@@ -23,9 +23,9 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
     return () => clearInterval(interval);
   }, [duration]);
 
-  const radius = 290;
-  const radiusMinute = 260;
-  const radiusHour = 235;
+  const radius = 190;
+  const radiusMinute = 175;
+  const radiusHour = 163;
 
   const circumference = 2 * Math.PI * radius;
   const circumferenceMinutes = 2 * Math.PI * radiusMinute;
@@ -37,23 +37,23 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
   
   return (
     <div className="flex justify-end items-center min-h-screen bg-[#171717] text-white">
-      <div className="relative flex flex-col items-center p-8 mr-20 mb-5 rounded-[50%] bg-[#111] shadow-xl">
+      <div className="relative flex flex-col items-center p-8 mr-55 mt-20 rounded-[50%] bg-[#111] shadow-xl">
         <div className="relative flex items-center justify-center">
-          <svg className="w-150 h-150 -rotate-90">
+          <svg className="w-100 h-100 -rotate-90">
             <circle
-              cx="300"
-              cy="300"
+              cx="200"
+              cy="200"
               r={radiusHour}
               stroke="#333"
-              strokeWidth="10"
+              strokeWidth="5"
               fill="transparent"
             />
             <circle
-              cx="300"
-              cy="300"
+              cx="200"
+              cy="200"
               r={radiusHour}
               stroke="#ffffff"
-              strokeWidth="10"
+              strokeWidth="5"
               fill="transparent"
               strokeDasharray={circumference}
               strokeDashoffset={strokeDashoffset}
@@ -61,19 +61,19 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
               className="transition-all duration-100 linear"
             />
             <circle
-              cx="300"
-              cy="300"
+              cx="200"
+              cy="200"
               r={radiusMinute}
               stroke="#333"
-              strokeWidth="15"
+              strokeWidth="7.5"
               fill="transparent"
             />
             <circle
-              cx="300"
-              cy="300"
+              cx="200"
+              cy="200"
               r={radiusMinute}
               stroke="#ffffff"
-              strokeWidth="15"
+              strokeWidth="7.5"
               fill="transparent"
               strokeDasharray={circumference}
               strokeDashoffset={strokeDashoffset}
@@ -81,19 +81,19 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
               className="transition-all duration-100 linear"
             />
             <circle
-              cx="300"
-              cy="300"
+              cx="200"
+              cy="200"
               r={radius}
               stroke="#333"
-              strokeWidth="20"
+              strokeWidth="10"
               fill="transparent"
             />
             <circle
-              cx="300"
-              cy="300"
+              cx="200"
+              cy="200"
               r={radius}
               stroke="#ffffff"
-              strokeWidth="20"
+              strokeWidth="10"
               fill="transparent"
               strokeDasharray={circumference}
               strokeDashoffset={strokeDashoffset}
@@ -101,7 +101,7 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
               className="transition-all duration-100 linear"
             />
           </svg>
-          <span className="absolute text-[150px] font-bold">
+          <span className="absolute text-[75px] font-bold">
             {timeLeft}s
           </span>
         </div>

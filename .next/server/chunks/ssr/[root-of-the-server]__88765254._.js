@@ -53,9 +53,9 @@ function Timer({ duration = 10 }) {
     }, [
         duration
     ]);
-    const radius = 290;
-    const radiusMinute = 260;
-    const radiusHour = 235;
+    const radius = 190;
+    const radiusMinute = 175;
+    const radiusHour = 163;
     const circumference = 2 * Math.PI * radius;
     const circumferenceMinutes = 2 * Math.PI * radiusMinute;
     const circumferenceHour = 2 * Math.PI * radiusHour;
@@ -65,19 +65,19 @@ function Timer({ duration = 10 }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex justify-end items-center min-h-screen bg-[#171717] text-white",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative flex flex-col items-center p-8 mr-20 mb-5 rounded-[50%] bg-[#111] shadow-xl",
+            className: "relative flex flex-col items-center p-8 mr-55 mt-20 rounded-[50%] bg-[#111] shadow-xl",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative flex items-center justify-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        className: "w-150 h-150 -rotate-90",
+                        className: "w-100 h-100 -rotate-90",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "300",
-                                cy: "300",
+                                cx: "200",
+                                cy: "200",
                                 r: radiusHour,
                                 stroke: "#333",
-                                strokeWidth: "10",
+                                strokeWidth: "5",
                                 fill: "transparent"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Clock.tsx",
@@ -85,11 +85,11 @@ function Timer({ duration = 10 }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "300",
-                                cy: "300",
+                                cx: "200",
+                                cy: "200",
                                 r: radiusHour,
                                 stroke: "#ffffff",
-                                strokeWidth: "10",
+                                strokeWidth: "5",
                                 fill: "transparent",
                                 strokeDasharray: circumference,
                                 strokeDashoffset: strokeDashoffset,
@@ -101,11 +101,11 @@ function Timer({ duration = 10 }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "300",
-                                cy: "300",
+                                cx: "200",
+                                cy: "200",
                                 r: radiusMinute,
                                 stroke: "#333",
-                                strokeWidth: "15",
+                                strokeWidth: "7.5",
                                 fill: "transparent"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Clock.tsx",
@@ -113,11 +113,11 @@ function Timer({ duration = 10 }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "300",
-                                cy: "300",
+                                cx: "200",
+                                cy: "200",
                                 r: radiusMinute,
                                 stroke: "#ffffff",
-                                strokeWidth: "15",
+                                strokeWidth: "7.5",
                                 fill: "transparent",
                                 strokeDasharray: circumference,
                                 strokeDashoffset: strokeDashoffset,
@@ -129,11 +129,11 @@ function Timer({ duration = 10 }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "300",
-                                cy: "300",
+                                cx: "200",
+                                cy: "200",
                                 r: radius,
                                 stroke: "#333",
-                                strokeWidth: "20",
+                                strokeWidth: "10",
                                 fill: "transparent"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Clock.tsx",
@@ -141,11 +141,11 @@ function Timer({ duration = 10 }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "300",
-                                cy: "300",
+                                cx: "200",
+                                cy: "200",
                                 r: radius,
                                 stroke: "#ffffff",
-                                strokeWidth: "20",
+                                strokeWidth: "10",
                                 fill: "transparent",
                                 strokeDasharray: circumference,
                                 strokeDashoffset: strokeDashoffset,
@@ -163,7 +163,7 @@ function Timer({ duration = 10 }) {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "absolute text-[150px] font-bold",
+                        className: "absolute text-[75px] font-bold",
                         children: [
                             timeLeft,
                             "s"
@@ -203,7 +203,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Routine() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex justify-center items-center ml-20 min-h-screen bg-[#171717] text-white",
+        className: "flex justify-center items-center ml-55 min-h-screen bg-[#171717] text-white",
         children: "function is here"
     }, void 0, false, {
         fileName: "[project]/src/components/Routine.tsx",

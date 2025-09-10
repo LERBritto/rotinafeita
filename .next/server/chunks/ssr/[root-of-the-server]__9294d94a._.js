@@ -102,7 +102,7 @@ function Home() {
         className: "bg-[#171717] text-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "justify-between bg-[#202020] shadow-md",
+                className: "mx-[12.5vw] bg-[#171717] border-[1px] border-zinc-600/25 absolute top-12 w-[75vw] z-8 rounded-lg p-4 text-white shadow-sm shadow-zinc-600/75",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "justify-end flex gap-4 mr-5",
                     children: [
