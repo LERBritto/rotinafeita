@@ -38,9 +38,9 @@ function Timer(param) {
     }["Timer.useEffect"], [
         duration
     ]);
-    const radius = 190;
-    const radiusMinute = 175;
-    const radiusHour = 163;
+    const radius = 230;
+    const radiusMinute = 213;
+    const radiusHour = 199;
     const circumference = 2 * Math.PI * radius;
     const circumferenceMinutes = 2 * Math.PI * radiusMinute;
     const circumferenceHour = 2 * Math.PI * radiusHour;
@@ -50,16 +50,16 @@ function Timer(param) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex justify-end items-center min-h-screen bg-[#171717] text-white",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative flex flex-col items-center p-8 mr-55 mt-20 rounded-[50%] bg-[#111] shadow-xl",
+            className: "relative flex flex-col items-center p-1 mr-55 mt-20 rounded-[50%] bg-[#111] shadow-xl",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative flex items-center justify-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                        className: "w-100 h-100 -rotate-90",
+                        className: "w-120 h-120 -rotate-90",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "200",
-                                cy: "200",
+                                cx: "240",
+                                cy: "240",
                                 r: radiusHour,
                                 stroke: "#333",
                                 strokeWidth: "5",
@@ -70,8 +70,8 @@ function Timer(param) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "200",
-                                cy: "200",
+                                cx: "240",
+                                cy: "240",
                                 r: radiusHour,
                                 stroke: "#ffffff",
                                 strokeWidth: "5",
@@ -86,8 +86,8 @@ function Timer(param) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "200",
-                                cy: "200",
+                                cx: "240",
+                                cy: "240",
                                 r: radiusMinute,
                                 stroke: "#333",
                                 strokeWidth: "7.5",
@@ -98,8 +98,8 @@ function Timer(param) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "200",
-                                cy: "200",
+                                cx: "240",
+                                cy: "240",
                                 r: radiusMinute,
                                 stroke: "#ffffff",
                                 strokeWidth: "7.5",
@@ -114,8 +114,8 @@ function Timer(param) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "200",
-                                cy: "200",
+                                cx: "240",
+                                cy: "240",
                                 r: radius,
                                 stroke: "#333",
                                 strokeWidth: "10",
@@ -126,8 +126,8 @@ function Timer(param) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                                cx: "200",
-                                cy: "200",
+                                cx: "240",
+                                cy: "240",
                                 r: radius,
                                 stroke: "#ffffff",
                                 strokeWidth: "10",
@@ -196,7 +196,39 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function Routine() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex justify-center items-center ml-55 min-h-screen bg-[#171717] text-white",
-        children: "function is here"
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex flex-col mt-20 items-center",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-[40px] font-bold",
+                    children: "{taskName}"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Routine.tsx",
+                    lineNumber: 9,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-[20px]",
+                    children: "{timeRemaining}"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Routine.tsx",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    className: "border rounded-3xl mt-4 p-3 cursor-pointer",
+                    children: "Concluir Tarefa"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/Routine.tsx",
+                    lineNumber: 15,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/Routine.tsx",
+            lineNumber: 8,
+            columnNumber: 13
+        }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Routine.tsx",
         lineNumber: 7,

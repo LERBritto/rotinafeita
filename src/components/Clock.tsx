@@ -23,9 +23,9 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
     return () => clearInterval(interval);
   }, [duration]);
 
-  const radius = 190;
-  const radiusMinute = 175;
-  const radiusHour = 163;
+  const radius = 230;
+  const radiusMinute = 213;
+  const radiusHour = 199;
 
   const circumference = 2 * Math.PI * radius;
   const circumferenceMinutes = 2 * Math.PI * radiusMinute;
@@ -37,20 +37,20 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
   
   return (
     <div className="flex justify-end items-center min-h-screen bg-[#171717] text-white">
-      <div className="relative flex flex-col items-center p-8 mr-55 mt-20 rounded-[50%] bg-[#111] shadow-xl">
+      <div className="relative flex flex-col items-center p-1 mr-55 mt-20 rounded-[50%] bg-[#111] shadow-xl">
         <div className="relative flex items-center justify-center">
-          <svg className="w-100 h-100 -rotate-90">
+          <svg className="w-120 h-120 -rotate-90">
             <circle
-              cx="200"
-              cy="200"
+              cx="240"
+              cy="240"
               r={radiusHour}
               stroke="#333"
               strokeWidth="5"
               fill="transparent"
             />
             <circle
-              cx="200"
-              cy="200"
+              cx="240"
+              cy="240"
               r={radiusHour}
               stroke="#ffffff"
               strokeWidth="5"
@@ -61,16 +61,16 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
               className="transition-all duration-100 linear"
             />
             <circle
-              cx="200"
-              cy="200"
+              cx="240"
+              cy="240"
               r={radiusMinute}
               stroke="#333"
               strokeWidth="7.5"
               fill="transparent"
             />
             <circle
-              cx="200"
-              cy="200"
+              cx="240"
+              cy="240"
               r={radiusMinute}
               stroke="#ffffff"
               strokeWidth="7.5"
@@ -81,16 +81,16 @@ export default function Timer({ duration = 10 }: { duration?: number }) {
               className="transition-all duration-100 linear"
             />
             <circle
-              cx="200"
-              cy="200"
+              cx="240"
+              cy="240"
               r={radius}
               stroke="#333"
               strokeWidth="10"
               fill="transparent"
             />
             <circle
-              cx="200"
-              cy="200"
+              cx="240"
+              cy="240"
               r={radius}
               stroke="#ffffff"
               strokeWidth="10"
