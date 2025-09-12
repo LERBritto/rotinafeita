@@ -12,7 +12,8 @@ export default function Routine() {
                 <span className="text-[20px]">
                     {"{timeRemaining}"}
                 </span>
-                <button className="border rounded-3xl mt-4 p-3 cursor-pointer">
+                <button className="border-3 rounded-3xl mt-4 p-3 cursor-pointer font-bold
+                                   transition-all duration-500 ease-in-out transform hover:scale-110">
                     Concluir Tarefa
                 </button>
             </div>

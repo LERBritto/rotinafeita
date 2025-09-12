@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/luis/%C3%81rea%20de%20trabalho/Projects/rotinafeita/src/app/myroutine/page.tsx"],"sourcesContent":["export default function myroutine() {\n    return(\n        <div className=\"text-white\">\n            rotinas\n        </div>\n    )\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;QAAI,WAAU;kBAAa;;;;;;AAIpC","debugId":null}}]
+}
