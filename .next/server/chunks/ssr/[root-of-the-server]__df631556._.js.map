@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///home/luis/%C3%81rea%20de%20trabalho/Projects/rotinafeita/src/app/auth/forgot/page.tsx"],"sourcesContent":["export default function forgot() {\n    return (\n        <div>\n            forgot\n        </div>\n    )\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;kBAAI;;;;;;AAIb","debugId":null}}]
+}
