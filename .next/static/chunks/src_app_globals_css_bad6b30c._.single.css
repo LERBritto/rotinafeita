@@ -7,9 +7,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-divide-x-reverse: 0;
       --tw-border-style: solid;
-      --tw-divide-y-reverse: 0;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 rgba(0, 0, 0, 0);
       --tw-shadow-color: initial;
@@ -38,9 +36,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-divide-x-reverse: 0;
       --tw-border-style: solid;
-      --tw-divide-y-reverse: 0;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 rgba(0, 0, 0, 0);
       --tw-shadow-color: initial;
@@ -69,7 +65,6 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --color-amber-500: #f99c00;
     --color-blue-300: #90c5ff;
     --color-gray-400: #99a1af;
     --color-gray-800: #1e2939;
@@ -89,7 +84,6 @@
 
   @supports (color: color(display-p3 0 0 0)) {
     :root, :host {
-      --color-amber-500: color(display-p3 .93994 .620584 .0585367);
       --color-blue-300: color(display-p3 .602559 .767214 .993938);
       --color-gray-400: color(display-p3 .605734 .630385 .680158);
       --color-gray-800: color(display-p3 .125854 .159497 .216835);
@@ -99,7 +93,6 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
-      --color-amber-500: lab(72.7183% 31.8672 97.9407);
       --color-blue-300: lab(77.5052% -6.4629 -36.42);
       --color-gray-400: lab(65.9269% -.832707 -8.17473);
       --color-gray-800: lab(16.1051% -1.18239 -11.7533);
@@ -594,53 +587,6 @@
     gap: calc(var(--spacing) * 4);
   }
 
-  :where(.divide-x > :not(:last-child)) {
-    --tw-divide-x-reverse: 0;
-    border-inline-style: var(--tw-border-style);
-  }
-
-  :where(.divide-x > :not(:last-child)):not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    border-left-width: calc(1px * var(--tw-divide-x-reverse));
-    border-right-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
-  :where(.divide-x > :not(:last-child)):not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    border-left-width: calc(1px * var(--tw-divide-x-reverse));
-    border-right-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
-  :where(.divide-x > :not(:last-child)):not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    border-left-width: calc(1px * var(--tw-divide-x-reverse));
-    border-right-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
-  :where(.divide-x > :not(:last-child)):-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    border-right-width: calc(1px * var(--tw-divide-x-reverse));
-    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
-  :where(.divide-x > :not(:last-child)):-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    border-right-width: calc(1px * var(--tw-divide-x-reverse));
-    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
-  :where(.divide-x > :not(:last-child)):is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    border-right-width: calc(1px * var(--tw-divide-x-reverse));
-    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
-  :where(.divide-y > :not(:last-child)) {
-    --tw-divide-y-reverse: 0;
-    border-bottom-style: var(--tw-border-style);
-    border-top-style: var(--tw-border-style);
-    border-top-width: calc(1px * var(--tw-divide-y-reverse));
-    border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  }
-
-  :where(.divide-amber-500 > :not(:last-child)) {
-    border-color: var(--color-amber-500);
-  }
-
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
@@ -756,10 +702,6 @@
 
   .text-\[\#171717\] {
     color: #171717;
-  }
-
-  .text-\[\#ffffff\] {
-    color: #fff;
   }
 
   .text-white {
@@ -879,22 +821,10 @@
   inherits: false
 }
 
-@property --tw-divide-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-
-@property --tw-divide-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 
 @property --tw-font-weight {

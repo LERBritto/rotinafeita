@@ -7,8 +7,6 @@ export default function NavBar(){
                 <Link href="/dashboard" className="font-bold hover:text-gray-400">Dashboard</Link>
                 <span>|</span>
                 <Link href="/myroutine" className="font-bold hover:text-gray-400">Rotinas</Link>
-                <span>|</span>
-                <Link href="/leaderboard" className="font-bold hover:text-gray-400">Leaderboard</Link>
             </div>
             <div className="flex gap-4 mr-5">
                 <Link href="/auth/signin" className="font-bold hover:text-gray-400">Signin</Link>
