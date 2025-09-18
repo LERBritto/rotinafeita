@@ -11,7 +11,7 @@ export default function NavBar(){
             <div className="flex gap-4 mr-5">
                 <Link href="/auth/signin" className="font-bold hover:text-gray-400">Signin</Link>
                 <span>|</span>
-                <Link href="/auth/signout" className="font-bold hover:text-gray-400">Signout</Link>
+                <Link href="/auth/signup" className="font-bold hover:text-gray-400">Signup</Link>
             </div>
         </nav>   
     )

@@ -1,4 +1,4 @@
-export default function signout() {
+export default function signup() {
     return (
         <div className="flex justify-center h-screen items-center">
             <div className="max-w-lg w-full py-20 px-10 text-white">

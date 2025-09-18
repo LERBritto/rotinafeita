@@ -6,7 +6,7 @@ import NavBar from "./navbar/page";
 
 export default function Home() {
   return (
-    <div className="bg-[#171717] text-white">
+    <div>
       <NavBar />
       <div className="grid grid-cols-2 gap-4">
         <Routine />
