@@ -65,13 +65,7 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --color-red-600: #e40014;
-    --color-red-700: #bf000f;
-    --color-green-600: #00a544;
-    --color-green-700: #008138;
     --color-blue-300: #90c5ff;
-    --color-blue-600: #155dfc;
-    --color-blue-700: #1447e6;
     --color-gray-400: #99a1af;
     --color-gray-500: #6a7282;
     --color-gray-600: #4a5565;
@@ -99,13 +93,7 @@
 
   @supports (color: color(display-p3 0 0 0)) {
     :root, :host {
-      --color-red-600: color(display-p3 .830323 .140383 .133196);
-      --color-red-700: color(display-p3 .692737 .116232 .104679);
-      --color-green-600: color(display-p3 .243882 .640824 .294808);
-      --color-green-700: color(display-p3 .198355 .501799 .245335);
       --color-blue-300: color(display-p3 .602559 .767214 .993938);
-      --color-blue-600: color(display-p3 .174493 .358974 .950247);
-      --color-blue-700: color(display-p3 .1379 .274983 .867624);
       --color-gray-400: color(display-p3 .605734 .630385 .680158);
       --color-gray-500: color(display-p3 .421287 .446085 .504784);
       --color-gray-600: color(display-p3 .297358 .332176 .39043);
@@ -116,13 +104,7 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
-      --color-red-600: lab(48.4493% 77.4328 61.5452);
-      --color-red-700: lab(40.4273% 67.2623 53.7441);
-      --color-green-600: lab(59.0978% -58.6621 41.2579);
-      --color-green-700: lab(47.0329% -47.0239 31.4788);
       --color-blue-300: lab(77.5052% -6.4629 -36.42);
-      --color-blue-600: lab(44.0605% 29.0279 -86.0352);
-      --color-blue-700: lab(36.9089% 35.0961 -85.6872);
       --color-gray-400: lab(65.9269% -.832707 -8.17473);
       --color-gray-500: lab(47.7841% -.393182 -10.0268);
       --color-gray-600: lab(35.6337% -1.58697 -10.8425);
@@ -513,11 +495,6 @@
     margin-right: 12.5vw;
   }
 
-  .mx-\[13vw\] {
-    margin-left: 13vw;
-    margin-right: 13vw;
-  }
-
   .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -603,28 +580,8 @@
     width: 75vw;
   }
 
-  .w-\[80\%\] {
-    width: 80%;
-  }
-
-  .w-\[80vw\] {
-    width: 80vw;
-  }
-
   .w-\[85vw\] {
     width: 85vw;
-  }
-
-  .w-\[90vw\] {
-    width: 90vw;
-  }
-
-  .w-\[500px\] {
-    width: 500px;
-  }
-
-  .w-auto {
-    width: auto;
   }
 
   .w-full {
@@ -667,14 +624,6 @@
     align-items: center;
   }
 
-  .items-end {
-    align-items: flex-end;
-  }
-
-  .items-start {
-    align-items: flex-start;
-  }
-
   .justify-between {
     justify-content: space-between;
   }
@@ -685,10 +634,6 @@
 
   .justify-end {
     justify-content: flex-end;
-  }
-
-  .justify-start {
-    justify-content: flex-start;
   }
 
   .gap-2 {
@@ -723,11 +668,6 @@
     border-radius: var(--radius-lg);
   }
 
-  .border-1 {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -741,10 +681,6 @@
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-
-  .border-gray-800 {
-    border-color: var(--color-gray-800);
   }
 
   .border-zinc-600\/25 {
@@ -765,24 +701,12 @@
     background-color: #171717;
   }
 
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
-  }
-
   .bg-gray-600 {
     background-color: var(--color-gray-600);
   }
 
   .bg-gray-800 {
     background-color: var(--color-gray-800);
-  }
-
-  .bg-green-600 {
-    background-color: var(--color-green-600);
-  }
-
-  .bg-red-600 {
-    background-color: var(--color-red-600);
   }
 
   .bg-white {
@@ -813,18 +737,6 @@
     padding: calc(var(--spacing) * 8);
   }
 
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
-
-  .p-\[76vw\] {
-    padding: 76vw;
-  }
-
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
-  }
-
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -835,30 +747,6 @@
 
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
-  }
-
-  .px-\[12vw\] {
-    padding-left: 12vw;
-    padding-right: 12vw;
-  }
-
-  .px-\[13vw\] {
-    padding-left: 13vw;
-    padding-right: 13vw;
-  }
-
-  .px-\[30vw\] {
-    padding-left: 30vw;
-    padding-right: 30vw;
-  }
-
-  .px-\[40vw\] {
-    padding-left: 40vw;
-    padding-right: 40vw;
-  }
-
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
   }
 
   .py-2 {
@@ -1030,12 +918,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-blue-700:hover {
-      background-color: var(--color-blue-700);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-gray-500:hover {
       background-color: var(--color-gray-500);
     }
@@ -1044,18 +926,6 @@
   @media (hover: hover) {
     .hover\:bg-gray-600:hover {
       background-color: var(--color-gray-600);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-green-700:hover {
-      background-color: var(--color-green-700);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-red-700:hover {
-      background-color: var(--color-red-700);
     }
   }
 
