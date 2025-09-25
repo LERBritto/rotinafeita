@@ -516,6 +516,10 @@
     margin-top: calc(var(--spacing) * 30);
   }
 
+  .mt-50 {
+    margin-top: calc(var(--spacing) * 50);
+  }
+
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
   }
@@ -528,6 +532,10 @@
     margin-right: calc(var(--spacing) * 55);
   }
 
+  .mr-auto {
+    margin-right: auto;
+  }
+
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -538,6 +546,10 @@
 
   .ml-55 {
     margin-left: calc(var(--spacing) * 55);
+  }
+
+  .ml-\[50\%\] {
+    margin-left: 50%;
   }
 
   .ml-auto {
@@ -749,12 +761,32 @@
     padding-inline: calc(var(--spacing) * 10);
   }
 
+  .px-25 {
+    padding-inline: calc(var(--spacing) * 25);
+  }
+
+  .px-30 {
+    padding-inline: calc(var(--spacing) * 30);
+  }
+
+  .px-50 {
+    padding-inline: calc(var(--spacing) * 50);
+  }
+
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
 
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
+
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
 
   .py-20 {
@@ -793,6 +825,10 @@
 
   .text-\[40px\] {
     font-size: 40px;
+  }
+
+  .text-\[50px\] {
+    font-size: 50px;
   }
 
   .text-\[60px\] {

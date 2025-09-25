@@ -163,9 +163,9 @@ function NavBar() {
                 className: "flex gap-4 ml-5",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/dashboard",
+                        href: "/",
                         className: "font-bold hover:text-gray-400",
-                        children: "Dashboard"
+                        children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/src/app/navbar/page.tsx",
                         lineNumber: 7,
@@ -259,7 +259,7 @@ function CrudRow() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex justify-center items-center",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex justify-between items-center border-2 rounded-2xl border-zinc-600/25 shadow-sm shadow-zinc-600/75 p-4 w-[85vw] mt-3 text-white text-[32px] font-bold",
+            className: "flex justify-between items-center border-2 rounded-2xl border-zinc-600/25 shadow-sm shadow-zinc-600/75 p-4 mx-[12.5vw] mt-50 w-[75vw] text-white text-[32px] font-bold",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-left",
@@ -344,25 +344,25 @@ function myroutine() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-col h-screen w-screen items-center",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex w-full p-5",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>setOpen(true),
-                            className: "ml-auto mt-30 mr-50 py-2 px-5 rounded-2xl bg-white text-black cursor-pointer transition-colors duration-300 hover:bg-gray-600 hover:text-white",
-                            children: "Criar Rotina"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/myroutine/page.tsx",
-                            lineNumber: 16,
-                            columnNumber: 17
-                        }, this)
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$crud$2f$CrudRow$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/myroutine/page.tsx",
                         lineNumber: 15,
                         columnNumber: 13
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$crud$2f$CrudRow$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex w-full p-5",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>setOpen(true),
+                            className: "ml-auto mr-auto py-5 px-25 rounded-2xl bg-white text-black cursor-pointer transition-colors duration-300 hover:bg-gray-600 hover:text-white text-[24px] font-bold",
+                            children: "Criar tarefa"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/myroutine/page.tsx",
+                            lineNumber: 17,
+                            columnNumber: 17
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/app/myroutine/page.tsx",
-                        lineNumber: 18,
+                        lineNumber: 16,
                         columnNumber: 13
                     }, this)
                 ]
